@@ -1,5 +1,5 @@
 #!/bin/bash
-# wget -qO- https://github.com/danclaudiupop/dotfiles/raw/master/install.sh | /bin/bash
+# wget -qO- https://bitbucket.org/mvmocanu/dotfiles/raw/42de9616131c789044c3c3f2a8ed136e60090c72/install.sh | /bin/bash
 
 if [ -d ~/.dotfiles ]; then
     cd ~/.dotfiles
