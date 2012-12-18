@@ -60,7 +60,10 @@ set shiftround              " Rounds indent to a multiple of shiftwidth
 set matchpairs+=<:>         " Show matching <> (html mainly) as well
 set foldmethod=indent       " Allow us to fold on indents
 set foldlevel=99            " Don't fold by default
-set colorcolumn=79          " Color column to mark the end 80 char limit
+set mouse=a                 " Activate mouse
+if exists('+colorcolumn')
+    set colorcolumn=79      " Color column to mark the end 80 char limit
+endif
 
 " Reading/Writing
 set noautowrite             " Never write a file unless I request it
