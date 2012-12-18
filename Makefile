@@ -1,9 +1,9 @@
-install: install-git install-conky
+install: install-git install-conky install-vim
 
-#install-vim:
-	#rm -rf ~/.vim ~/.vimrc
-	#ln -s `pwd`/vim ~/.vim
-	#ln -s ~/.vim/vimrc ~/.vimrc
+install-vim:
+	rm -rf ~/.vim ~/.vimrc
+	ln -s `pwd`/vim ~/.vim
+	ln -s ~/.vim/vimrc ~/.vimrc
 
 install-git:
 	rm -f ~/.gitconfig

@@ -10,5 +10,5 @@ fi
 
 cd ~/.dotfiles
 make install
-#git submodule init
-#git submodule update
+git submodule init
+git submodule update
