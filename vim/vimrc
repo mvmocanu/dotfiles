@@ -2,11 +2,21 @@
 set nocompatible              " Don't be compatible with vi
 let mapleader=","             " Change the leader to be a comma vs slash
 
+
+" Ctrl-jklm  changes to that split
+map <c-j> <c-w>j
+map <c-k> <c-w>k
+map <c-l> <c-w>l
+map <c-h> <c-w>h
+
 " Reload .vimrc
 map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
 
 " Open NerdTree
 map <leader>n :NERDTreeToggle<CR>
+
+" Toggle paste mode
+map <leader>p :set paste!<CR>
 
 " Powerline
 let g:Powerline_symbols = 'fancy'
@@ -19,6 +29,12 @@ filetype off
 "call pathogen#runtime_append_all_bundles()
 call pathogen#infect()
 call pathogen#helptags()
+
+" Correct my typos
+command! W :w
+command! Q :q
+command! Wq :wq
+command! WQ :wq
 
 " Basic settings
 syntax on                     " Syntax highlighing
