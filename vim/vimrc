@@ -140,6 +140,6 @@ if has("gui_running")
     set guioptions-=T
 endif
 
-colorscheme Tomorrow-Night-Eighties
+colorscheme molokai
 
 let g:pep8_map='<leader>8'
