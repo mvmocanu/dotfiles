@@ -14,5 +14,5 @@ install-conky:
 	ln -s `pwd`/conky/conkyrc ~/.conkyrc
 
 install-tmux:
-	rm -f ~/.tmuxconf
-	ln -s `pwd`/tmux/tmuxconf ~/.tmuxconf
+	rm -f ~/.tmux.conf
+	ln -s `pwd`/tmux/tmux.conf ~/.tmux.conf
