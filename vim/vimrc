@@ -5,12 +5,6 @@ let mapleader=","             " Change the leader to be a comma vs slash
 " Reload .vimrc
 map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
 
-" Ctrl-jklm  changes to that split
-map <c-j> <c-w>j
-map <c-k> <c-w>k
-map <c-l> <c-w>l
-map <c-h> <c-w>h
-
 " Open NerdTree
 map <leader>n :NERDTreeToggle<CR>
 
@@ -107,7 +101,7 @@ set showmatch               " Briefly jump to a paren once it's balanced
 set incsearch               " Incrementally search while typing a /regex
 set gdefault                " Applies substitutions globally on lines
 
-" Hide matches on double esc 
+" Hide matches on double esc
 nnoremap <esc><esc> :noh<CR>
 
 " Use tabs to move between bracket pairs
@@ -128,3 +122,5 @@ if has("gui_running")
 endif
 
 colorscheme Tomorrow-Night-Eighties
+
+let g:pep8_map='<leader>8'
