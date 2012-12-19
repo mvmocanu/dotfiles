@@ -1,4 +1,4 @@
-install: install-git install-conky install-vim install-tmux
+install: install-git install-conky install-vim install-zsh install-tmux
 
 install-vim:
 	rm -rf ~/.vim ~/.vimrc
@@ -16,3 +16,7 @@ install-conky:
 install-tmux:
 	rm -f ~/.tmux.conf
 	ln -s `pwd`/tmux/tmux.conf ~/.tmux.conf
+
+install-zsh:
+	rm -f ~/.zshrc
+	ln -s `pwd`/zsh/zshrc ~/.zshrc
