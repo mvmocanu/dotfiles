@@ -1,7 +1,13 @@
 Hey,
 
-This are my public dotfiles. They might not work for you, but feel free
-to steal from them.
+These are my personal config files. They might not work for you, but feel free
+to steal them or inspire from them.
+
+You need:
+* Git
+* zsh
+* tmux
+* virtualenvwrapper
 
 Based on:
 * https://github.com/mitsuhiko/dotfiles
