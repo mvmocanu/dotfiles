@@ -5,7 +5,7 @@ if [ -d ~/.dotfiles ]; then
     cd ~/.dotfiles
     git pull origin master
 else
-    git clone https://bitbucket.org/mvmocanu/dotfiles.git ~/.dotfiles/
+    git clone https://github.com/mvmocanu/dotfiles.git ~/.dotfiles/
 fi
 
 cd ~/.dotfiles
