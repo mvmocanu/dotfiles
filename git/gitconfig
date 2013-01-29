@@ -1,30 +1,30 @@
 [user]
-	name = Mihai Mocanu
-	email = mihai.form@gmail.com
+    name = Mihai Mocanu
+    email = mihai.form@gmail.com
 [core]
-	excludesfile = ~/.gitignore
-	autocrlf = input
-	editor = /usr/bin/vim
+    excludesfile = ~/.gitignore
+    autocrlf = input
+    editor = /usr/bin/vim
 [color]
-	ui = auto
+    ui = auto
     branch = auto
 [color "diff"]
-	meta = yellow bold
-	frag = magenta bold
-	old = red bold
-	new = green bold
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
 [color "status"]
-	added = green
-	changed = yellow
-	untracked = cyan
+    added = green
+    changed = yellow
+    untracked = cyan
 [alias]
-	st = status
-	ci = commit
-	co = checkout
-	br = branch
+    st = status
+    ci = commit
+    co = checkout
+    br = branch
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-	unci = reset HEAD^
-	uncommit = reset HEAD^
-	ls = ls-files
-	out = log HEAD..origin
-	killbranches = !git branch | grep -v master | xargs git branch -d 2> /dev/null
+    unci = reset HEAD^
+    uncommit = reset HEAD^
+    ls = ls-files
+    out = log HEAD..origin
+    killbranches = !git branch | grep -v master | xargs git branch -d 2> /dev/null
