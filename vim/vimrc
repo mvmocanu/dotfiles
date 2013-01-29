@@ -111,8 +111,6 @@ set listchars=tab:·\ ,eol:¬,trail:»
 set list
 
 " Searching and Patterns
-nnoremap / /\v
-vnoremap / /\v
 set ignorecase              " Default to using case insensitive searches,
 set smartcase               " Unless uppercase letters are used in the regex.
 set hlsearch                " Highlight searches by default.
