@@ -156,4 +156,6 @@ endif
 colorscheme molokai
 
 let g:syntastic_check_on_open=1
+map <leader>c :SyntasticCheck<CR>
+map <leader>e :Errors<CR>
 " let g:pep8_map='<leader>8'
