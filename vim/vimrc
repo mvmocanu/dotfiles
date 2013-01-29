@@ -2,6 +2,19 @@
 set nocompatible              " Don't be compatible with vi
 let mapleader=","             " Change the leader to be a comma vs slash
 
+set rtp+=~/.dotfiles/vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle.git'
+Bundle 'tpope/vim-fugitive.git'
+Bundle 'tpope/vim-surround.git'
+Bundle 'scrooloose/syntastic.git'
+Bundle 'scrooloose/nerdtree.git'
+Bundle 'scrooloose/nerdcommenter.git'
+" Bundle 'Raimondi/delimitMate.git'
+" Bundle 'vim-scripts/AutoComplPop.git'
+Bundle 'Lokaltog/vim-powerline.git'
+
 
 " Ctrl-jklm  changes to that split
 map <c-j> <c-w>j
@@ -14,9 +27,13 @@ map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimr
 
 " Open NerdTree
 map <leader>n :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
+
+" Hide matches on double esc
+map <leader><space> :noh<CR>
 
 " Toggle paste mode
-map <leader>p :set paste!<CR>
+" map <leader>p :set paste!<CR>
 
 " Powerline
 let g:Powerline_symbols = 'fancy'
@@ -25,11 +42,12 @@ let g:Powerline_symbols = 'fancy'
 nnoremap <leader>s :%s/\s\+$//<cr>:let @/=''<CR>
 
 " Load pathogen with docs for all plugins
-filetype off
-call pathogen#runtime_append_all_bundles()
-call pathogen#infect()
-call pathogen#helptags()
+" filetype off
+" call pathogen#runtime_append_all_bundles()
+" call pathogen#infect()
+" call pathogen#helptags()
 
+nnoremap <leader>w :w<CR>
 " Correct my typos
 command! W :w
 command! Q :q
@@ -118,9 +136,6 @@ set showmatch               " Briefly jump to a paren once it's balanced
 set incsearch               " Incrementally search while typing a /regex
 set gdefault                " Applies substitutions globally on lines
 
-" Hide matches on double esc
-nnoremap <esc><esc> :noh<CR>
-
 " Use tabs to move between bracket pairs
 nnoremap <tab> %
 vnoremap <tab> %
@@ -140,4 +155,5 @@ endif
 
 colorscheme molokai
 
-let g:pep8_map='<leader>8'
+let g:syntastic_check_on_open=1
+" let g:pep8_map='<leader>8'
