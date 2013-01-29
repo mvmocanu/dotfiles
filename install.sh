@@ -1,5 +1,5 @@
 #!/bin/bash
-# wget -qO- https://raw.github.com/mvmocanu/dotfiles/master/install.sh | /bin/bash
+# wget -qO- --no-check-certificate https://raw.github.com/mvmocanu/dotfiles/master/install.sh | /bin/bash
 
 if [ -d ~/.dotfiles ]; then
     cd ~/.dotfiles/.vim/bundle/vundle/
