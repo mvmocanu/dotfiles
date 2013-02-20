@@ -9,12 +9,10 @@ Bundle 'gmarik/vundle.git'
 Bundle 'tpope/vim-fugitive.git'
 Bundle 'tpope/vim-surround.git'
 Bundle 'scrooloose/syntastic.git'
-" Bundle 'scrooloose/nerdtree.git'
 Bundle 'scrooloose/nerdcommenter.git'
-" Bundle 'Raimondi/delimitMate.git'
-" Bundle 'vim-scripts/AutoComplPop.git'
 Bundle 'Lokaltog/vim-powerline.git'
-Bundle 'Valloric/YouCompleteMe'
+" needs vim 7.3
+" Bundle 'Valloric/YouCompleteMe'
 
 
 " Ctrl-jklm  changes to that split
