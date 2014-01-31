@@ -14,7 +14,6 @@ Bundle 'Lokaltog/vim-powerline.git'
 " needs vim 7.3
 " Bundle 'Valloric/YouCompleteMe'
 
-
 " Ctrl-jklm  changes to that split
 map <c-j> <c-w>j
 map <c-k> <c-w>k
@@ -32,19 +31,10 @@ let NERDTreeShowHidden=1
 map <leader><space> :noh<CR>
 
 " Toggle paste mode
-" map <leader>p :set paste!<CR>
-
-" Powerline
-let g:Powerline_symbols = 'fancy'
+map <leader>p :set paste!<CR>
 
 " Remove trailing whitespace on <leader>S
 nnoremap <leader>s :%s/\s\+$//<cr>:let @/=''<CR>
-
-" Load pathogen with docs for all plugins
-" filetype off
-" call pathogen#runtime_append_all_bundles()
-" call pathogen#infect()
-" call pathogen#helptags()
 
 nnoremap <leader>w :w<CR>
 " Correct my typos
@@ -124,7 +114,7 @@ set laststatus=2            " Always show statusline, even if only 1 window
 set statusline=[%l,%v\ %P%M]\ %f\ %r%h%w\ (%{&ff})\ %{fugitive#statusline()}
 
 " Displays tabs with :set list & displays when a line runs off-screen
-set listchars=tab:·\ ,eol:¬,trail:»
+set listchars=tab:·\ ,trail:»
 set list
 
 " Searching and Patterns
@@ -157,4 +147,3 @@ colorscheme molokai
 let g:syntastic_check_on_open=1
 map <leader>c :SyntasticCheck<CR>
 map <leader>e :Errors<CR>
-" let g:pep8_map='<leader>8'
