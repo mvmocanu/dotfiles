@@ -1,6 +1,6 @@
 [user]
     name = Mihai Mocanu
-    email = mvmocanu@users.noreply.github.com
+    email = mihai.mocanu@cyber-solutions.com
 [core]
     excludesfile = ~/.gitignore
     autocrlf = false

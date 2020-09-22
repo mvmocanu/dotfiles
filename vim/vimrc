@@ -6,7 +6,6 @@ set rtp+=~/.dotfiles/vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle.git'
-Bundle 'tpope/vim-fugitive.git'
 Bundle 'tpope/vim-surround.git'
 Bundle 'scrooloose/syntastic.git'
 Bundle 'scrooloose/nerdcommenter.git'
