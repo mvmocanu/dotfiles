@@ -1,11 +1,1 @@
 export EDITOR=/usr/bin/vim
-
-# virtualenvwrapper related
-export WORKON_HOME=$HOME/venvs
-export VIRTUALENV_USE_DISTRIBUTE=1
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
-export PIP_VIRTUALENV_BASE=$WORKON_HOME
-export PIP_RESPECT_VIRTUALENV=true
-export PROJECT_HOME=$HOME/work
-source /usr/local/bin/virtualenvwrapper.sh
-

@@ -6,8 +6,8 @@ if [ -d ~/.dotfiles ]; then
     git pull origin master
     cd ~/.dotfiles
     git pull origin master
-    sudo pip install pip --upgrade
-    sudo pip install flake8 --upgrade
+    #sudo pip install pip --upgrade
+    #sudo pip install flake8 --upgrade
     vim -u ~/.dotfiles/vim/vimrc - +BundleInstall! +BundleClean! +qall
 else
     git clone https://github.com/mvmocanu/dotfiles.git ~/.dotfiles/
@@ -16,8 +16,8 @@ else
     cd ~/.dotfiles
     make install
 
-    sudo pip install pip --upgrade
-    sudo pip install flake8 --upgrade
+    #sudo pip install pip --upgrade
+    #sudo pip install flake8 --upgrade
     vim -u ~/.dotfiles/vim/vimrc - +BundleInstall +qall
 fi
 
